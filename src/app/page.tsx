@@ -1,3 +1,4 @@
+import EditVente from "@/components/editVente";
 import getAllVoitures from "../lib/getAllVoitures";
 
 export default async function Home() {
@@ -62,6 +63,7 @@ export default async function Home() {
         </tbody>
       </table>
       <br/>
+      <EditVente/>
       </section>
     </main>
   );
