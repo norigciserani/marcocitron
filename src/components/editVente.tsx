@@ -73,10 +73,6 @@ const formAtZero: champsI = {
 }
 
 export default function EditVente() {
-    useEffect(() => {
-        require("bootstrap/dist/js/bootstrap.bundle.min.js");
-    }, []);
-
     const [formData, setFormData] = useState<champsI>(formAtZero)
 
     const colonneForm = (champ : string) => {  // La taille des différents champs

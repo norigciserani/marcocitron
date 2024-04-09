@@ -3,6 +3,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
 import EditVente from "@/components/editVente"
+import { Container } from "react-bootstrap";
 
 const formAtZero = {
     nom: "",
@@ -26,13 +27,8 @@ const formAtZero = {
 }
 
 export default function Home() {
-    useEffect(() => {
-        require("bootstrap/dist/js/bootstrap.bundle.min.js");
-    }, []);
-
-
     return (
-        <div className="container bg-light">
+        <Container className="bg-light">
             <EditVente />
-        </div>
+        </Container>
 )}
